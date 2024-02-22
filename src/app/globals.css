@@ -1,0 +1,356 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.screen{
+  width: 80%;
+  margin: 20px auto;
+  height: auto;
+  /* background-color: aliceblue; */
+}
+
+.green-btn {
+  padding: 8px 13px;
+  background-color: rgb(96, 170, 96);
+  border: none;
+  color: white;
+  font-weight: 600;
+  border-radius: 10px;
+  font-size: 15px;
+  margin: 0px 10px;
+
+}
+
+.nav{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+.col-btn{
+  color: rgb(255, 255, 255);
+  background-color: #4857aa;
+  padding: 5px 25px;
+  border-radius: 10px;
+}
+
+.f-weight{
+  font-weight: 500;
+}
+
+.list-headings{
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex{
+  display: flex;
+}
+
+.list-headings h3{
+  margin-left: 20px;
+}
+
+.search{
+  outline: none;
+  border: 1.5px solid black;
+  width: 250px;
+  height: 30px;
+  border-radius: 10px;
+  padding: 5px 20px;
+}
+
+.search-container{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.delete-btn{
+  padding: 5px 25px;
+  border-radius: 10px;
+  border: 1.5px solid rgb(0, 0, 0);
+  background-color: rgb(246, 100, 100);
+  color: rgb(250, 245, 245);
+  font-weight: 600;
+}
+
+.list-container{
+  /* background-color: antiquewhite; */
+  margin-top: 30px;
+ 
+}
+
+.list-content{
+  border-top: 1.5px solid rgb(162, 160, 160);
+  display: flex;
+  min-height: 80px;
+  align-items: center;
+}
+
+.img-container{
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: blueviolet;
+  margin-left: 15px;
+}
+
+.description-container{
+  margin-left: 30px;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+}
+.form input , .form label , .form select{
+  width: 70%;
+  margin: auto;
+
+  
+}
+
+.form input{
+  border: 1px solid grey;
+  height: 30px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  padding-left: 10px;
+}
+.form select{
+  border: 1px solid grey;
+  height: 30px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  padding-left: 10px;
+}
+
+.active-pop{
+  background-color: rgb(255, 255, 255);
+  border: 1.5px solid black;
+  border-radius: 10px;
+  width: 30%;
+  min-height: 400px;
+  scale: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  transition: scale 300ms ease-in-out;
+  z-index: 5;
+}
+
+.inActive-pop{
+  position: absolute;
+  scale: 0;
+  top: 50%;
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  transition: scale 300ms ease-in-out;
+}
+
+.pop-top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.pop-top h3{
+  font-weight: 500;
+  margin-left: 10px;
+}
+.pop-top span{
+  font-size: 25px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+#description{
+  height: 80px;
+  width: 70%;
+  margin: auto;
+   border: 1px solid grey;
+  margin-bottom: 60px;
+  border-radius: 8px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px;
+}
+
+.description{
+  font-size: 13px;
+}
+
+.save-btn{
+  padding: 5px 15px;
+  width: fit-content;
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+}
+
+.options{
+  /* background-color: aqua; */
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
+.dkf{
+  color:#ef7676;
+}
+
+table{
+  border-spacing: 0;
+  margin: auto;
+}
+
+td{
+  height: 40px;
+}
+td input , td select{
+  margin-top: 5px;
+  height: 35px;
+}
+
+th{
+  text-align: start ;
+}
+
+.t-services {
+  width: 200px;
+  border-bottom: 1px solid black;
+  padding-bottom: 10px;
+  /* margin-left: 20px; */
+}
+.t-category{
+  width: 200px;
+  border-bottom: 1px solid black;
+  padding-bottom: 10px;
+}
+.t-category select{
+  width: 80%;
+}
+.t-price{
+  width: 100px;
+  border-bottom: 1px solid black;
+  padding-bottom: 10px;
+}
+.t-price input{
+  width: 80%;
+}
+.t-duration{
+  width: 100px;
+  border-bottom: 1px solid black;
+  padding-bottom: 10px;
+}
+.t-duration input{
+  width: 80%;
+  /* margin: auto; */
+}
+.t-gender{
+  width: 150px;
+  border-bottom: 1px solid black;
+  padding-bottom: 10px;
+}
+.t-gender select{
+  width: 90%;
+}
+
+.t-action{
+  width: 120px;
+  padding-left: 20px;
+  /* border-bottom: 1px solid black; */
+  padding-bottom: 10px;
+
+}
+
+.t-action button{
+  padding: 8px 10px;
+  min-width: 100px;
+  background-color: rgb(96, 170, 96);
+  border: none;
+  color: white;
+  font-weight: 600;
+  border-radius: 10px;
+  font-size: 10px;
+  margin: 0px 10px;
+}
+
+table tr:last-child td{
+  border: none;
+  
+}
+
+.delete-popup{
+  background-color: rgb(255, 255, 255);
+  border: 1.5px solid black;
+  border-radius: 10px;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  scale: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%; 
+  padding: 20px;
+  transform: translate(-50%, -50%);
+  transition: scale 300ms ease-in-out;
+  z-index: 2;
+}
+
+.del-active{
+  width: 400px;
+  height: 400px;
+}
+.x-btn{
+  background-color: #ef7676;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid black;
+  margin: 5px;
+}
+
+.editing-row{
+  padding-left: 20px;
+}
+
+.edit{
+  background-color: transparent;
+  border: none;
+}
+
+.save{
+  background-color: rgb(92, 163, 92);
+  border: none;
+  font-size: 12px;
+  color: white;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.confirm-yes{
+  width: 80px;
+  height: 30px;
+  margin: 15px;
+  border: 1px solid rgb(7, 122, 53);
+  background-color: rgb(134, 221, 134);
+  border-radius: 10px;
+}
+
+.confirm-no{
+  width: 80px;
+  margin: 15px;
+  border-radius: 10px;
+  border: 1px solid rgb(250, 4, 4);
+  background-color: #ef7676;
+  height: 30px;
+}
